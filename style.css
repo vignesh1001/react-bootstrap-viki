@@ -1,0 +1,108 @@
+h1, p {
+  font-family: Lato;
+}
+.login .text-danger {
+  color: #dc3545 !important;
+}
+.login .form-control.is-invalid {
+    border-color: #dc3545;
+    padding-right: calc(1.5em + .75rem);
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' stroke='%23dc3545' viewBox='0 0 12 12'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right calc(.375em + .1875rem) center;
+    background-size: calc(.75em + .375rem) calc(.75em + .375rem);
+}
+.login h3,.login  h4 {
+    color: #ff1e38;
+    font-family: BebasNeueRegular;
+}
+.login .section-one #btn-forgot {
+    font-size: 14px;
+    color: #ff1e38;
+    text-decoration: none;
+    cursor: pointer;
+}
+.login .registration-titles {
+    font-size: 36px;
+    line-height: 43px;
+    font-family: BebasNeueRegular;
+    font-weight: 400;
+}
+.login .form-control.is-invalid:focus {
+    border-color: #dc3545;
+}
+.login :focus {
+    outline: 0;
+    box-shadow: none!important;
+}
+
+.login .dont-have-account {
+    margin-top: 30px;
+    padding-top: 5px;
+    border-top: 1px solid #e5e5e5;
+}
+.login .dont-have-account * {
+    margin: 0;
+    padding: 0;
+    line-height: 25px;
+    font-size: 16px;
+}
+.login .dont-have-account a{
+    font-weight: 600;
+    text-decoration: underline;
+}
+.login .txt-grey {
+    color: #a0a0a0;
+}
+.login .txt-red,a.txt-red:hover {
+    color: #ff1e38;
+}
+
+.login .social-login {
+  margin: 15px 0;
+}
+.login .social-login button.facebook {
+  background: #3b5998;
+}
+.login .social-login button.google {
+  background: #ff1e38;
+}
+.social-login button:last-child {
+    margin-right: 0;
+}
+.social-login button,.social-login button:hover {
+    margin-right: 15px;
+    color: #fff;
+}
+.login .btn-darkred {
+    border-radius: 8px;
+    background-color: #ff1e38;
+    border: none;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+    padding: 5px 25px;
+    outline: 0;
+    position: relative;
+    overflow: hidden;
+}
+.login .btn-darkred:hover {
+    opacity: .9;
+    cursor: pointer;
+    color: #fff;
+}
+.login .btn-darkred:hover:after {
+    width: 120%;
+    background-color: rgba(255,255,255,0);
+    transition: all .4s ease-in-out;
+}
+.login .btn-darkred:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgba(255,255,255,.4);
+    transition: none;
+}
