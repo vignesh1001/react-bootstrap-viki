@@ -1,0 +1,118 @@
+.compare-side {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    transition: all .5s ease;
+}
+
+.compare-side .compare-button  {
+    font-size: 12px;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: 1.8px;
+    text-align: left;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    margin: auto;
+    background-color: #ff1e38;
+    border-radius: 7px 7px 0 0;
+    cursor: pointer;
+}
+.compare-side .compare-button .rotated {
+    font-weight: 400;
+    text-align: center;
+    padding: 10px;
+    width: 130px;
+}
+@media (max-width: 480px) and (min-width: 0px){
+  .compare-side {
+      display: block!important;
+      right: unset!important;
+      width: 100%!important;
+      z-index: 0;
+  }
+  .compare-content-b {
+    height: auto!important;
+    padding-bottom: 20px;
+  }
+  .product-group {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.compare-side .compare-side-blur.blur {
+    -webkit-filter: blur(30px);
+    -moz-filter: blur(30px);
+    -o-filter: blur(30px);
+    -ms-filter: blur(30px);
+    filter: blur(30px);
+    background: rgba(10,50,81,0);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 30px;
+}
+.compare-side .compare-content-b {
+    width: 100%;
+    height: 127px;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    background: rgba(0,0,0,.4);
+}
+.compare-content-b {
+    padding-top: .7rem;
+}
+.compare-side .compare-content-b .product-group {
+    width: 70%;
+}
+.compare-side .compare-content-b .product-group .comp-product {
+    height: 88px;
+    border-radius: 4px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border: 1px dashed #fff;
+}
+.comp-product {
+    margin-top: .4rem;
+}
+@media (max-width: 768px){
+  .compare-side .compare-content-b .product-group .comp-product .comp-product-remove {
+      width: 25px;
+      height: 25px;
+      left: -14px;
+      background-size: 9px!important;
+  }
+}
+.compare-side .compare-content-b .product-group .comp-product .comp-product-remove {
+    position: absolute;
+    background: url(https://d278b6t7sxzrhn.cloudfront.net/angular-assets/images/close-red.svg) center no-repeat #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.compare-side .compare-content-b .product-group .comp-product .comp-product-img {
+    width: 80px;
+    height: 65px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 7px;
+    margin-right: 6px;
+}
+.compare-side .compare-content-b .product-group .comp-product .comp-product-inf {
+    width: 70%;
+}
+.compare-side .compare-content-b .product-group .comp-product .comp-product-inf span:first-child {
+    font-size: 11px;
+    line-height: 1.27;
+    letter-spacing: normal;
+    color: #646464;
+}
